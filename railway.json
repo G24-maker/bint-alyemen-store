@@ -1,0 +1,28 @@
+{
+  "name": "Bint Alyemen Store",
+  "description": "Women's Clothing E-Commerce Store",
+  "buildCommand": "cd backend && npm install && cd .. && npm install && npm run build",
+  "startCommand": "npm --prefix backend start",
+  "envVars": {
+    "NODE_ENV": {
+      "description": "Node environment",
+      "value": "production"
+    },
+    "PORT": {
+      "description": "Server port",
+      "value": "3001"
+    },
+    "JWT_SECRET": {
+      "description": "JWT secret key - change this!",
+      "value": "$RANDOM_STRING_32"
+    },
+    "ADMIN_EMAIL": {
+      "description": "Admin email",
+      "value": "admin@bintalyemen.com"
+    },
+    "ADMIN_PASSWORD": {
+      "description": "Admin password",
+      "value": "$RANDOM_STRING_16"
+    }
+  }
+}
